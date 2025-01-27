@@ -63,7 +63,7 @@ export class App extends Component {
 
         
         const {contacts} = this.state;
-        this.setState({contacts : contacts.filter(item => item.id != id)});
+        this.setState({contacts : contacts.filter(item => item.id !== id)});
     }
 
     render (){
