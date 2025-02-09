@@ -1,6 +1,7 @@
 import { Component } from "react";
 import {ImSearch} from 'react-icons/im';
 import css from "./Filter.module.css";
+import PropTypes from "prop-types";
 
 export class Filter extends Component{
 
@@ -12,4 +13,9 @@ export class Filter extends Component{
                     <ImSearch className={css.icon}/>
                 </label> ;
     }
+}
+
+Filter.propTypes = {
+    filter: PropTypes.string,
+    onChange: PropTypes.func,
 }
